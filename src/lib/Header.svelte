@@ -1,18 +1,43 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
+  import { beforeNavigate } from '$app/navigation';
+  import type { MenuItem } from './models/all';
+  import MenuItemDesktop from './header/MenuItemDesktop.svelte';
+  import MenuItemMobile from './header/MenuItemMobile.svelte';
 
   let expanded = false;
+  const menu: MenuItem[] = [
+    { title: 'O nas', link: '/o-nas' },
+    {
+      title: 'Oferta',
+      link: '/oferta',
+      children: [
+        { title: 'Fotowoltaika', link: '', desc: '' },
+        { title: 'Pompy ciepła', link: '', desc: '' },
+        { title: 'Klimatyzatory', link: '', desc: '' },
+        { title: 'Magazyny energii', link: '', desc: '' },
+        { title: 'Rekuperacja', link: '', desc: '' }
+      ]
+    },
+    { title: 'Dotacje', link: '/dotacje' },
+    { title: 'Kontakt', link: '/kontakt' },
+    { title: 'Konsultacje', link: '/konsultacje' }
+  ];
 
   let toggle = () => {
     expanded = !expanded;
   };
+
+  beforeNavigate(() => {
+    expanded = false;
+  });
 </script>
 
 <header class="bg-white">
   <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-    <a href="#" class="-m-1.5 p-1.5">
+    <a href="/" class="-m-1.5 p-1.5">
       <span class="sr-only">Specsolar</span>
-      <img class="h-8 w-auto" src="images/logo.png" alt="" />
+      <img class="h-8 w-auto" src="/images/logo.png" alt="" />
     </a>
     <div class="flex lg:hidden">
       <button
@@ -38,29 +63,25 @@
       </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">O nas</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Oferta</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Dotacje</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Kontakt</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Konsultacje</a>
+      {#each menu as item}
+        <MenuItemDesktop {item} />
+      {/each}
     </div>
   </nav>
 
   {#if expanded}
-    <!-- Mobile menu, show/hide based on menu open state. -->
-    <div class="lg:hidden" role="dialog" aria-modal="true" transition:fade={{ duration: 250 }}>
-      <!-- Background backdrop, show/hide based on slide-over state. -->
-      <div class="fixed inset-0 z-10" />
+    <div class="lg:hidden" role="dialog" aria-modal="true" transition:fade={{ duration: 200 }}>
+      <div class="fixed inset-0 z-10 bg-black opacity-25" on:click={toggle} on:keypress={toggle} />
       <div
         class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
       >
         <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto" src="images/logo.png" alt="Logo specsolar" />
+          <a href="/" class="-m-1.5 p-1.5">
+            <span class="sr-only">Specsolar</span>
+            <img class="h-8 w-auto" src="/images/logo.png" alt="Logo specsolar" />
           </a>
           <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" on:click={toggle}>
-            <span class="sr-only">Close menu</span>
+            <span class="sr-only">Zamknij menu</span>
             <svg
               class="h-6 w-6"
               fill="none"
@@ -76,31 +97,9 @@
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <a
-                href="#"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >O nas</a
-              >
-              <a
-                href="#"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Oferta</a
-              >
-              <a
-                href="#"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Dotacje</a
-              >
-              <a
-                href="#"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Kontakt</a
-              >
-              <a
-                href="#"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Konsultacje</a
-              >
+              {#each menu as item}
+                <MenuItemMobile {item} />
+              {/each}
             </div>
           </div>
         </div>

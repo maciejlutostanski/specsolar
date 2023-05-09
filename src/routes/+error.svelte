@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { applyAction } from '$app/forms';
-
   let back = () => {
     history.back();
   };
