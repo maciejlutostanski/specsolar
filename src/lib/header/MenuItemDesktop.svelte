@@ -2,6 +2,7 @@
   import type { MenuItem } from '$lib/models/all';
   import { slide } from 'svelte/transition';
   import { cubicInOut } from 'svelte/easing';
+  import { clickOutside } from '$lib/utils/backclick';
 
   export let item: MenuItem;
   let expanded = false;
@@ -18,13 +19,12 @@
 {#if !item.children}
   <a href={item.link} class="text-sm font-semibold leading-6 text-gray-900">{item.title}</a>
 {:else}
-  <div class="relative">
+  <div class="relative" use:clickOutside on:click_outside={close}>
     <button
       type="button"
       class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
       aria-expanded="false"
       on:click={toggle}
-      on:blur={close}
     >
       {item.title}
       <svg
@@ -43,9 +43,9 @@
     {#if expanded}
       <div
         transition:slide={{ duration: 200, easing: cubicInOut }}
-        class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-sm bg-white shadow-lg ring-1 ring-gray-900/5"
+        class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded bg-white shadow-lg ring-1 ring-gray-900/5"
       >
-        <div class="p-4">
+        <div class="">
           {#each item.children as child}
             <div
               class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
@@ -74,7 +74,7 @@
                 </svg>
               </div>
               <div class="flex-auto">
-                <a href={child.link} class="block font-semibold text-gray-900">
+                <a href={item.link + child.link} class="block font-semibold text-gray-900">
                   {child.title}
                   <span class="absolute inset-0" />
                 </a>

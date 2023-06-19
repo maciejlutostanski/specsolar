@@ -12,11 +12,11 @@
       title: 'Oferta',
       link: '/oferta',
       children: [
-        { title: 'Fotowoltaika', link: '', desc: '' },
-        { title: 'Pompy ciepła', link: '', desc: '' },
-        { title: 'Klimatyzatory', link: '', desc: '' },
-        { title: 'Magazyny energii', link: '', desc: '' },
-        { title: 'Rekuperacja', link: '', desc: '' }
+        { title: 'Fotowoltaika', link: '/fotowoltaika', desc: '' },
+        { title: 'Pompy ciepła', link: '/pompy-ciepla', desc: '' },
+        { title: 'Klimatyzatory', link: '/klimatyzatory', desc: '' },
+        { title: 'Magazyny energii', link: '/magazyny-energii', desc: '' },
+        { title: 'Rekuperacja', link: '/rekuperacja', desc: '' }
       ]
     },
     { title: 'Dotacje', link: '/dotacje' },
@@ -35,9 +35,9 @@
 
 <header class="bg-white">
   <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-    <a href="/" class="-m-1.5 p-1.5">
+    <a href="/" class="-m-4">
       <span class="sr-only">Specsolar</span>
-      <img class="h-8 w-auto" src="/images/logo.png" alt="" />
+      <img class="h-12 w-auto" src="/images/logo.png" alt="" />
     </a>
     <div class="flex lg:hidden">
       <button
