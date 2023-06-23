@@ -74,7 +74,7 @@
                 </svg>
               </div>
               <div class="flex-auto">
-                <a href={item.link + child.link} class="block font-semibold text-gray-900">
+                <a href={item.link + child.link} on:click={close} class="block font-semibold text-gray-900">
                   {child.title}
                   <span class="absolute inset-0" />
                 </a>

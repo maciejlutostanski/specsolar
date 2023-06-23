@@ -10,7 +10,7 @@
           Making the world a better place through constructing elegant hierarchies.
         </p>
         <div class="flex space-x-6">
-          <a href="#" class="text-gray-400 hover:text-gray-500">
+          <a href="https://www.facebook.com/profile.php?id=100044801752178" target="_blank" rel="noreferrer" class="text-gray-400 hover:text-gray-500">
             <span class="sr-only">Facebook</span>
             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
@@ -25,78 +25,45 @@
       <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-gray-900">Solutions</h3>
-            <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Marketing</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Analytics</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Commerce</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Insights</a>
-              </li>
-            </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-gray-900">Support</h3>
-            <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Pricing</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900"
-                  >Documentation</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Guides</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900"
-                  >API Status</a
-                >
-              </li>
-            </ul>
           </div>
         </div>
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-gray-900">Company</h3>
-            <ul role="list" class="mt-6 space-y-4">
+            <!-- <h3 class="text-sm font-semibold leading-6 text-gray-900"></h3> -->
+            <ul role="list" class="space-y-4">
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">About</a>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">O nas</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Blog</a>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Dotacje</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Jobs</a>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Kontakt</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Press</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Partners</a>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Konsultacje</a>
               </li>
             </ul>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-gray-900">Legal</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">Oferta</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Claim</a>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Fotowoltaika</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Privacy</a>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Pompy ciepła</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Terms</a>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Klimatyzatory</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Magazyny energii</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Rekuperacja</a>
               </li>
             </ul>
           </div>

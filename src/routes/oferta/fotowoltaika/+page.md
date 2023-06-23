@@ -48,8 +48,9 @@ ograniczysz koszty energii elektrycznej w swojej firmie oraz uniezależnisz się
 przez co najmniej 25 lat. Czysta energia produkowana przez moduły fotowoltaiczne to również
 dodatkowy atut dla Ciebie – pokazuje Cię jako świadomego i odpowiedzialnego przedsiębiorcę
 dbającego o środowisko naturalne.
-CO ZYSKUJESZ? ( tutaj fajnie wygląda na tej stronie https://evoenergy.pl/oferta-na-panele-
-fotowoltaiczne/fotowoltaika-dla-firmy/ )
+
+CO ZYSKUJESZ? ( tutaj fajnie wygląda na tej stronie https://evoenergy.pl/oferta-na-panele-fotowoltaiczne/fotowoltaika-dla-firmy/ )
+
 Redukcja kosztów
 Proekologiczny wizerunek firmy
 Niezależność od podwyżek cen energii
