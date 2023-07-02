@@ -1,4 +1,6 @@
-<script lang="ts"></script>
+<script lang="ts">
+  import Cta from '$lib/Cta.svelte';
+</script>
 
 <svelte:head>
   <title>O nas | Specsolar.pl</title>
@@ -110,3 +112,5 @@
     </div>
   </div>
 </div>
+
+<Cta />

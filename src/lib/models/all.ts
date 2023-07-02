@@ -7,3 +7,11 @@ export type MenuItem = {
     desc: string;
   }>;
 };
+
+export type LeadType = {
+  imageUrl: string;
+  title: string;
+  subtitle: string;
+  desc: string;
+  points: Array<{ name: string; desc: string }>;
+}

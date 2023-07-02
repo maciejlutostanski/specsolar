@@ -20,8 +20,7 @@
       ]
     },
     { title: 'Dotacje', link: '/dotacje' },
-    { title: 'Kontakt', link: '/kontakt' },
-    { title: 'Konsultacje', link: '/konsultacje' }
+    { title: 'Kontakt', link: '/kontakt' }
   ];
 
   let toggle = () => {
