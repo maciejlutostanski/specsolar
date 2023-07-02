@@ -38,5 +38,3 @@
 </svelte:head>
 
 <Lead data={lead} />
-
-- - - -
