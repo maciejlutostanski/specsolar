@@ -5,18 +5,6 @@
   <meta name="description" content="Opis musi być" />
 </svelte:head>
 
-<!-- 
-
-Od 2018 roku stale rozwijamy nasze kompetencje świadcząc usługi osobom fizycznym oraz firmom, a
-także wspierając inne podmioty z branży OZE. Zależy nam na wspólnym budowaniu ekologicznej
-świadomości poprzez dostarczanie zielonej energii – wierzymy, że jest ona przyszłością świata.
-Oferujemy najwyższej jakości usługi oraz komponenty wiodących producentów w rozsądnych cenach.
-Oprócz doświadczenia w projektowaniu i montażach instalacji cechuje nas indywidualne podejście do
-klienta. Nie boimy się rozmawiać, odpowiadać na pytania i dzielić naszą wiedzą.
-Bierzemy odpowiedzialność za cały proces: począwszy od bezpłatnego audytu technicznego, poprzez
-pomoc w uzyskaniu finansowania i ulg, po zaprojektowanie i profesjonalny montaż instalacji, aż po
-przyłączenie instalacji do sieci oraz opiekę posprzedażową. -->
-
 <div class="relative isolate">
   <div
     class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
@@ -34,7 +22,9 @@ przyłączenie instalacji do sieci oraz opiekę posprzedażową. -->
           <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Jesteśmy pasjonatami odnawialnych źródeł energii
           </h1>
-          <p class="relative mt-6 text-xl leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+          <p
+            class="relative mt-6 text-xl font-medium leading-8 text-gray-600 sm:max-w-md lg:max-w-none"
+          >
             Zajmujemy się doborem i montażem Instalacji fotowoltaicznych pomp ciepła, klimatyzacji,
             magazynów energii oraz rekuperacji
           </p>

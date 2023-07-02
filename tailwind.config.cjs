@@ -2,7 +2,15 @@ const config = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
 
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        primary: {
+          200: "#FDE2AF",
+          400: "#FBCC74",
+          500: "#FAB436",
+        }
+      }
+    }
   },
 
   corePlugins: {
@@ -10,6 +18,7 @@ const config = {
   },
   
   plugins: [
+    require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio')
   ]
