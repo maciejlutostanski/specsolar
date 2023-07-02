@@ -36,7 +36,7 @@
   <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
     <a href="/" class="-m-4">
       <span class="sr-only">Specsolar</span>
-      <img class="h-12 w-auto" src="/images/logo.png" alt="" />
+      <img class="h-16 w-auto" src="/images/logo.png" alt="" />
     </a>
     <div class="flex lg:hidden">
       <button

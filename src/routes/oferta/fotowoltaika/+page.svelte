@@ -3,7 +3,7 @@
   import Lead from '$lib/oferta/Lead.svelte';
 
   const lead: LeadType = {
-    imageUrl: '/images/fotowoltaika/frame1.png',
+    imageUrl: '/images/oferta/fotowoltaika.png',
     title: 'Fotowoltaika dla domu',
     subtitle:
       'Zespół Spec Solar tworzą pasjonaci odnawialnych źródeł energii. Zajmujemy się, doborem i montażem instalacji fotowoltaicznych.',

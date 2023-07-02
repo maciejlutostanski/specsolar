@@ -1,12 +1,25 @@
-<script lang="ts"></script>
+<script lang="ts">
+  import type { LeadType } from '$lib/models/all';
+  import Lead from '$lib/oferta/Lead.svelte';
+
+  const lead: LeadType = {
+    imageUrl: '/images/dotacje/lead.png',
+    title: 'Dotacje na Ekoinwestycje',
+    subtitle:
+      'Planujesz własną termomodernizację domu? Zastanawiasz się skąd pozyskać dotację dla Twojego przedsięwzięcia?',
+    desc: `Dobrze trafiłeś! Wieloletnie doświadczenie pozwala nam na profesjonalnąi rzetelną pomoc w pozyskiwaniu dotacji gminnych oraz rządowych. Zadzwoń i dowiedz się, który program jest dla Ciebie!`,
+    points: []
+  };
+</script>
 
 <svelte:head>
   <title>Dotacje | Specsolar.pl</title>
   <meta name="description" content="Opis musi być" />
 </svelte:head>
 
+<Lead data={lead} category="Dotacje" />
 
-## Instalacje fotowoltaiczne:
+<!-- ## Instalacje fotowoltaiczne:
 ### Program „Mój Prąd”
 Program Mój Prąd – najpopularniejsze dofinansowanie do instalacji fotowoltaicznych
 Wszystkie dotacje są idealnie opisane na tej stronie ( https://wojtmar.com.pl/dotacje/ ) Można zrobić
@@ -53,4 +66,4 @@ Przykładowa kalkulacja odliczenia od podatku rolnego:
 - Roczny podatek rolny 1 000 zł
 - Wartość instalacji netto 40 000 zł
 - Możliwość odliczenia (25% z 40 000 zł) 10 000 zł czyli 10 lat po 1 000 zł podatku
-- Gospodarstwo Rolne będzie co roku zwolnione z opłaty 1 000 PLN podatku rolnego przez okres 10 lat
+- Gospodarstwo Rolne będzie co roku zwolnione z opłaty 1 000 PLN podatku rolnego przez okres 10 lat -->

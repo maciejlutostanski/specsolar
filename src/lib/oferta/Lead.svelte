@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { LeadType } from '$lib/models/all';
 
+  export let category = 'Oferta';
   export let data: LeadType;
 </script>
 
@@ -15,7 +16,7 @@
     >
       <div class="lg:pr-4">
         <div class="lg:max-w-lg">
-          <p class="text-base font-semibold leading-7 text-primary-500">Oferta</p>
+          <p class="text-base font-semibold leading-7 text-primary-500">{category}</p>
           <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             {data.title}
           </h1>

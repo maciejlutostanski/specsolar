@@ -3,7 +3,7 @@
   import Lead from '$lib/oferta/Lead.svelte';
 
   const lead: LeadType = {
-    imageUrl: '/images/fotowoltaika/frame1.png',
+    imageUrl: '/images/oferta/pompa.png',
     title: 'Pompy ciepła',
     subtitle:
       'Pompa ciepła pozwoli Ci ogrzać Twój dom w trakcie zimnych miesięcy oraz schłodzić go, gdy temperatura na zewnątrz da się we znaki domownikom.',

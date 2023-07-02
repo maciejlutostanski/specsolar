@@ -3,7 +3,7 @@
   import Lead from '$lib/oferta/Lead.svelte';
 
   const lead: LeadType = {
-    imageUrl: '/images/fotowoltaika/frame1.png',
+    imageUrl: '/images/oferta/magazyn.png',
     title: 'Niezależność z magazynem energii w domu i biznesie',
     subtitle:
       'Magazyn energii w Twoim domu to gwarancja bezpieczeństwa i niezależności. Zapomnij o awariach prądu w Twojej okolicy, czy przeciążonej sieci energetycznej. Postaw na magazyn energii i ciesz się darmową energią o każdej porze.',

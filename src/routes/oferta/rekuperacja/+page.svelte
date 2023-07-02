@@ -1,12 +1,45 @@
-<script lang="ts"></script>
+<script lang="ts">
+  import type { LeadType } from '$lib/models/all';
+  import Lead from '$lib/oferta/Lead.svelte';
+
+  const lead: LeadType = {
+    imageUrl: '/images/oferta/rekuperacja.png',
+    title: 'Rekuperacja',
+    subtitle:
+      'Pompa ciepła pozwoli Ci ogrzać Twój dom w trakcie zimnych miesięcy oraz schłodzić go, gdy temperatura na zewnątrz da się we znaki domownikom.',
+    desc: `Cała instalacja jest bezpiecznym, zamkniętym
+            układem, który nie emituje szkodliwych gazów, nie jest narażony na zagotowanie lub zapalenie sadzy
+            w kominie, a przede wszystkim jest całkowicie bezobsługowy. Zalety posiadania pompy ciepła w
+            gospodarstwie domowym:`,
+    points: [
+      {
+        name: '',
+        desc: 'Mniejsze rachunki za ogrzewanie'
+      },
+      {
+        name: '',
+        desc: 'Ogrzewanie domu i podgrzewaniu wody przy wykorzystaniu ciepła z powietrza'
+      },
+      {
+        name: '',
+        desc: 'Możliwość dofinansowania z Programu Czyste Powietrze czyli wymiany starego źródła ciepła na zakup i montaż pompy ciepła'
+      },
+      {
+        name: '',
+        desc: 'Korzystając z ciepła z powietrza chronimy środowisko naturalne zmniejszając emisję CO2 Zapoznaj się z ofertą pomp ciepła w Spec Solar i bądź przygotowany na nową inwestycję!'
+      }
+    ]
+  };
+</script>
 
 <svelte:head>
-
   <title>Rekuperacja | Specsolar.pl</title>
   <meta name="description" content="Opis musi być" />
 </svelte:head>
 
-## JAK DZIAŁA REKUPERACJA?
+<Lead data={lead} />
+
+<!-- ## JAK DZIAŁA REKUPERACJA?
 
 Rekuperacja to wymuszony obieg powietrza w Twoim domu, który nie wymaga klasycznego komina.
 Jest przemyślany, więc działa efektywnie: usuwa powietrze z “brudnych” pomieszczeń jak kuchnia,
@@ -60,4 +93,4 @@ spełniać znacznie bardziej rygorystyczne warunki wentylacji i utrzymania ciep�
 Rekuperacja gwarantuje zgodność z nowymi normami.
 
 Więcej o wymaganiach względem wentylacji przeczytasz tutaj: https://www.wentylacyjny.pl/2545-
-49-234-nowe-warunki-techniczne-2021–wymagania-dla-wentylacji.html
+49-234-nowe-warunki-techniczne-2021–wymagania-dla-wentylacji.html -->

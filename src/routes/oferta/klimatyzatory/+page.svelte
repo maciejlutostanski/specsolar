@@ -3,7 +3,7 @@
   import Lead from '$lib/oferta/Lead.svelte';
 
   const lead: LeadType = {
-    imageUrl: '/images/fotowoltaika/frame1.png',
+    imageUrl: '/images/oferta/klimatyzacja.png',
     title: 'Klimatyzatory',
     subtitle: 'Zadbaj o odpowiedni klimat w domu Idealna temperatura niemal przez cały rok.',
     desc: `Proponujemy montaż klimatyzatorów z funkcją grzania, które są idealnym uzupełnieniem instalacji
