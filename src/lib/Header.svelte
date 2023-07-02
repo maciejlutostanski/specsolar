@@ -41,7 +41,7 @@
     <div class="flex lg:hidden">
       <button
         type="button"
-        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+        class="-m-2.5 inline-flex items-center justify-center rounded-sm p-2.5 text-gray-700"
         on:click={toggle}
       >
         <span class="sr-only">Otwórz</span>
@@ -79,7 +79,7 @@
             <span class="sr-only">Specsolar</span>
             <img class="h-8 w-auto" src="/images/logo.png" alt="Logo specsolar" />
           </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" on:click={toggle}>
+          <button type="button" class="-m-2.5 rounded-sm p-2.5 text-gray-700" on:click={toggle}>
             <span class="sr-only">Zamknij menu</span>
             <svg
               class="h-6 w-6"

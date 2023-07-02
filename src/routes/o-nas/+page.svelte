@@ -56,10 +56,10 @@
               <img
                 src="/images/o-nas/frame1.png"
                 alt=""
-                class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                class="aspect-[2/3] w-full rounded-sm bg-gray-900/5 object-cover shadow-lg"
               />
               <div
-                class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                class="pointer-events-none absolute inset-0 rounded-sm ring-1 ring-inset ring-gray-900/10"
               />
             </div>
           </div>
@@ -68,20 +68,20 @@
               <img
                 src="/images/o-nas/frame2.png"
                 alt=""
-                class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                class="aspect-[2/3] w-full rounded-sm bg-gray-900/5 object-cover shadow-lg"
               />
               <div
-                class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                class="pointer-events-none absolute inset-0 rounded-sm ring-1 ring-inset ring-gray-900/10"
               />
             </div>
             <div class="relative">
               <img
                 src="/images/o-nas/frame3.png"
                 alt=""
-                class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                class="aspect-[2/3] w-full rounded-sm bg-gray-900/5 object-cover shadow-lg"
               />
               <div
-                class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                class="pointer-events-none absolute inset-0 rounded-sm ring-1 ring-inset ring-gray-900/10"
               />
             </div>
           </div>
@@ -90,20 +90,20 @@
               <img
                 src="/images/o-nas/frame4.png"
                 alt=""
-                class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                class="aspect-[2/3] w-full rounded-sm bg-gray-900/5 object-cover shadow-lg"
               />
               <div
-                class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                class="pointer-events-none absolute inset-0 rounded-sm ring-1 ring-inset ring-gray-900/10"
               />
             </div>
             <div class="relative">
               <img
                 src="/images/o-nas/frame5.png"
                 alt=""
-                class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                class="aspect-[2/3] w-full rounded-sm bg-gray-900/5 object-cover shadow-lg"
               />
               <div
-                class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                class="pointer-events-none absolute inset-0 rounded-sm ring-1 ring-inset ring-gray-900/10"
               />
             </div>
           </div>
