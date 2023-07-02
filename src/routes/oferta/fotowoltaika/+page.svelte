@@ -119,36 +119,30 @@
       class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
     >
       <div>
-        <dt class="font-semibold text-gray-900">Oszczędność na co dzień</dt>
-        <dd class="mt-1 text-gray-600">
-          Skorzystaj z naszej oferty fotowoltaiki i obniż swoje rachunki za energię nawet do 97%.
-        </dd>
+        <dt class="font-semibold text-gray-900">Redukcja kosztów</dt>
+        <dd class="mt-1 text-gray-600" />
       </div>
       <div>
-        <dt class="font-semibold text-gray-900">Komfort i wygoda</dt>
-        <dd class="mt-1 text-gray-600">
-          Systemy fotowoltaiczne są bezobsługowe, a ich wydajność sprawdzisz dzięki specjalnej
-          aplikacji.
-        </dd>
+        <dt class="font-semibold text-gray-900">Proekologiczny wizerunek firmy</dt>
+        <dd class="mt-1 text-gray-600" />
       </div>
       <div>
-        <dt class="font-semibold text-gray-900">Nowoczesne panele fotowoltaiczne</dt>
-        <dd class="mt-1 text-gray-600">
-          Wysokiej klasy fotowoltaika o dużej wydajności, zapewni Ci energię przez ponad 20 lat.
-        </dd>
+        <dt class="font-semibold text-gray-900">Niezależność od podwyżek cen energii</dt>
+        <dd class="mt-1 text-gray-600" />
       </div>
       <div>
-        <dt class="font-semibold text-gray-900">Prosty i szybki montaż</dt>
-        <dd class="mt-1 text-gray-600">
-          Instalacja paneli fotowoltaicznych jest łatwa i nie wymaga dużej ingerencji w konstrukcję
-          dachu.
-        </dd>
+        <dt class="font-semibold text-gray-900">Szybki zwrot z inwestycji</dt>
+        <dd class="mt-1 text-gray-600" />
       </div>
       <div>
-        <dt class="font-semibold text-gray-900">Kompleksowa obsługa</dt>
-        <dd class="mt-1 text-gray-600">
-          Zapewnimy Ci profesjonalne doradztwo i wsparcie na każdym etapie współpracy.
-        </dd>
+        <dt class="font-semibold text-gray-900">
+          Finansowanie – dopasowane tak, aby nie obciążać budżetu firmy
+        </dt>
+        <dd class="mt-1 text-gray-600" />
+      </div>
+      <div>
+        <dt class="font-semibold text-gray-900">Wzrost rentowności firmy</dt>
+        <dd class="mt-1 text-gray-600" />
       </div>
     </dl>
   </div>
