@@ -15,3 +15,8 @@ export type LeadType = {
   desc: string;
   points: Array<{ name: string; desc: string }>;
 }
+
+export type FaqItemType = {
+  question: string;
+  answer: string;
+}
