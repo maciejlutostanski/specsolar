@@ -52,7 +52,7 @@
     </button>
   </dt>
   {#if extended}
-    <dd class="pr-12" transition:slide={{ duration: 500, easing: cubicInOut }}>
+    <dd class="pr-12" transition:slide|local={{ duration: 500, easing: cubicInOut }}>
       <div class="text-base leading-7 prose pt-2">
         <SvelteMarkdown source={data.answer} />
       </div>

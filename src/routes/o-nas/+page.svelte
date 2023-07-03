@@ -8,6 +8,35 @@
 </svelte:head>
 
 <div class="relative isolate">
+  <svg
+    class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+    aria-hidden="true"
+  >
+    <defs>
+      <pattern
+        id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84"
+        width="200"
+        height="200"
+        x="50%"
+        y="-1"
+        patternUnits="userSpaceOnUse"
+      >
+        <path d="M.5 200V.5H200" fill="none" />
+      </pattern>
+    </defs>
+    <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+      <path
+        d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+        stroke-width="0"
+      />
+    </svg>
+    <rect
+      width="100%"
+      height="100%"
+      stroke-width="0"
+      fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"
+    />
+  </svg>
   <div
     class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
     aria-hidden="true"
@@ -56,9 +85,9 @@
               <img
                 src="/images/o-nas/frame1.png"
                 alt=""
-                class="aspect-[2/3] w-full rounded-sm object-cover shadow-lg"
+                class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
               />
-              <div class="pointer-events-none absolute inset-0 rounded-sm" />
+              <div class="pointer-events-none absolute inset-0 rounded-xl" />
             </div>
           </div>
           <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
@@ -66,17 +95,17 @@
               <img
                 src="/images/o-nas/frame2.png"
                 alt=""
-                class="aspect-[2/3] w-full rounded-sm object-cover shadow-lg"
+                class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
               />
-              <div class="pointer-events-none absolute inset-0 rounded-sm" />
+              <div class="pointer-events-none absolute inset-0 rounded-xl" />
             </div>
             <div class="relative">
               <img
                 src="/images/o-nas/frame3.png"
                 alt=""
-                class="aspect-[2/3] w-full rounded-sm object-cover shadow-lg"
+                class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
               />
-              <div class="pointer-events-none absolute inset-0 rounded-sm" />
+              <div class="pointer-events-none absolute inset-0 rounded-xl" />
             </div>
           </div>
           <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
@@ -84,17 +113,17 @@
               <img
                 src="/images/o-nas/frame4.png"
                 alt=""
-                class="aspect-[2/3] w-full rounded-sm object-cover shadow-lg"
+                class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
               />
-              <div class="pointer-events-none absolute inset-0 rounded-sm" />
+              <div class="pointer-events-none absolute inset-0 rounded-xl" />
             </div>
             <div class="relative">
               <img
                 src="/images/o-nas/frame5.png"
                 alt=""
-                class="aspect-[2/3] w-full rounded-sm object-cover shadow-lg"
+                class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
               />
-              <div class="pointer-events-none absolute inset-0 rounded-sm" />
+              <div class="pointer-events-none absolute inset-0 rounded-xl" />
             </div>
           </div>
         </div>

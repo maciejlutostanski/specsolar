@@ -12,11 +12,16 @@
       title: 'Oferta',
       link: '/oferta',
       children: [
-        { title: 'Fotowoltaika', link: '/fotowoltaika', desc: '' },
-        { title: 'Pompy ciepła', link: '/pompy-ciepla', desc: '' },
-        { title: 'Klimatyzatory', link: '/klimatyzatory', desc: '' },
-        { title: 'Magazyny energii', link: '/magazyny-energii', desc: '' },
-        { title: 'Rekuperacja', link: '/rekuperacja', desc: '' }
+        { title: 'Fotowoltaika', link: '/fotowoltaika', desc: '', iconUrl: '/images/menu/1.svg' },
+        { title: 'Pompy ciepła', link: '/pompy-ciepla', desc: '', iconUrl: '/images/menu/2.svg' },
+        { title: 'Klimatyzatory', link: '/klimatyzatory', desc: '', iconUrl: '/images/menu/3.svg' },
+        {
+          title: 'Magazyny energii',
+          link: '/magazyny-energii',
+          desc: '',
+          iconUrl: '/images/menu/4.svg'
+        },
+        { title: 'Rekuperacja', link: '/rekuperacja', desc: '', iconUrl: '/images/menu/5.svg' }
       ]
     },
     { title: 'Dotacje', link: '/dotacje' },

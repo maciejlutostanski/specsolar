@@ -5,6 +5,7 @@ export type MenuItem = {
     title: string;
     link: string;
     desc: string;
+    iconUrl?: string;
   }>;
 };
 
