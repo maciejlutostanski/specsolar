@@ -42,7 +42,11 @@
         imageUrl="/images/dotacje/2.png"
         href="/dotacje/czyste-powietrze"
       />
-      <OfferCard title="Dotacja Warszawska" imageUrl="/images/dotacje/3.png" />
+      <OfferCard
+        title="Dotacja Warszawska"
+        imageUrl="/images/dotacje/3.png"
+        href="/dotacje/warszawska"
+      />
       <OfferCard title="Program “Mój Ciepło”" imageUrl="/images/dotacje/4.png" />
       <OfferCard
         title="Program “Zielona Energia w Gospodarstwie”"
