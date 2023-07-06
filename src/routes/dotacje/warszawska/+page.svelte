@@ -63,7 +63,7 @@ Poniesione koszty można odliczyć od podstawy podatku pomniejszając ich wysoko
 </script>
 
 <svelte:head>
-  <title>Mój Prąd | Specsolar.pl</title>
+  <title>Dotacja Warszawska | Specsolar.pl</title>
   <meta name="description" content="Dotacja Warszawska" />
 </svelte:head>
 
