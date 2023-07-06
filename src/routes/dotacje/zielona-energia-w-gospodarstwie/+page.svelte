@@ -1,6 +1,7 @@
 <script lang="ts">
   import Cta from '$lib/Cta.svelte';
   import Faq from '$lib/Faq.svelte';
+  import SubsidyHeader from '$lib/SubsidyHeader.svelte';
   import type { FaqItemType } from '$lib/models/all';
 
   const faq: FaqItemType[] = [
@@ -45,12 +46,26 @@ Sprawność urządzeń do wytwarzania energii elektrycznej z promieniowania sło
       answer: `Działalność musi mieć charakter produkcji zwierzęcej lub roślinnej, z wyłączeniem chowu i hodowli ryb oraz nieekologicznego chowu drobiu. Jeżeli wnioskodawca prowadzi działalność w celu naukowo-badawczym, to nie uzyska dotacji z programu.`
     }
   ];
+
+  const what = `
+- Instalacja fotowoltaiczna
+- Magazyn energii
+- Pompa ciepła
+- System zarządzania przepływem energii
+  `;
 </script>
 
 <svelte:head>
   <title>Zielona energia w gospodarstwie | Specsolar.pl</title>
   <meta name="description" content="Zielona energia w gospodarstwie" />
 </svelte:head>
+
+<SubsidyHeader
+  title="Zielona energia w gospodarstwie"
+  forWho="Dla osób fizycznych i prawnych, spółek osobowych w rozumieniu Kodeksu spółek handlowych, wspólników spółek cywilnych, oddziałów przedsiębiorstwa zagranicznego."
+  {what}
+  amount="Rolnik może otrzymać do 50% poniesionych kosztów kwalifikowalnych, zaś młody rolnik 60%."
+/>
 
 <div>
   <Faq title="Poznaj szczegóły dotacji" data={faq} />
