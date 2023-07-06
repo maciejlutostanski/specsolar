@@ -1,6 +1,7 @@
 <script lang="ts">
   import Cta from '$lib/Cta.svelte';
   import Faq from '$lib/Faq.svelte';
+  import SubsidyHeader from '$lib/SubsidyHeader.svelte';
   import type { FaqItemType } from '$lib/models/all';
 
   const faq: FaqItemType[] = [
@@ -61,12 +62,25 @@ Poniesione koszty można odliczyć od podstawy podatku pomniejszając ich wysoko
       answer: 'Fotowoltaikę można połączyć tylko z pompą ciepła lub ogrzewaniem elektrycznym.'
     }
   ];
+
+  const amount = `
+Fotowoltaika – do **15 000 zł**<br>
+Pompa ciepła – do **30 000 zł**
+  `;
 </script>
 
 <svelte:head>
   <title>Dotacja Warszawska | Specsolar.pl</title>
   <meta name="description" content="Dotacja Warszawska" />
 </svelte:head>
+
+<SubsidyHeader
+  title="Dotacja Warszawska"
+  subtitle="Dotacja warszawska na fotowoltaikę to bezzwrotne środki na inwestycje rozwiązania OZE z Urzędu Miasta St. Warszawa."
+  forWho="Dla mieszkańców oraz przedsiębiorców m.st. Warszawy"
+  what="Instalacje fotowoltaiczne oraz pompy ciepła"
+  {amount}
+/>
 
 <div>
   <Faq title="Poznaj szczegóły dotacji" data={faq} />
