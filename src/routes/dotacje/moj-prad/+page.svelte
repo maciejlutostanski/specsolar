@@ -1,5 +1,6 @@
 <script lang="ts">
   import Faq from '$lib/Faq.svelte';
+  import SubsidyHeader from '$lib/SubsidyHeader.svelte';
   import type { FaqItemType } from '$lib/models/all';
 
   const faq: FaqItemType[] = [
@@ -67,12 +68,27 @@ Instalacje fotowoltaiczne w systemie net-metering po przejściu na net-billing z
         'Jeżeli ktoś skorzystał z ulgi w podatku rolnym nie może wnioskować o dotację Mój Prąd.'
     }
   ];
+
+  const what = `
+- Instalacje fotowoltaiczne o mocy od 2kW do 10kW
+- Magazyny energii elektrycznej
+- Magazyny ciepła
+- Systemy zarządzania energią HEMS/EMS Pompy ciepła  
+  `;
 </script>
 
 <svelte:head>
   <title>Mój Prąd | Specsolar.pl</title>
   <meta name="description" content="Program dofinansowania Mój Prąd" />
 </svelte:head>
+
+<SubsidyHeader
+  title="Mój Prąd"
+  subtitle="Program dofinansowania mikroinstalacji fotowoltaicznych"
+  forWho="Dla prosumentów w nowym systemie net-billing oraz dla dotychczasowych prosumentów, którzy zmienili system rozliczania z systemu opustów na nowy system net-billing."
+  {what}
+  amount="Łączna suma dotacji w ramach 5 edycji “Mój Prąd” to **58 000 zł** dla wnioskującego."
+/>
 
 <div>
   <Faq title="Poznaj szczegóły dotacji " data={faq} />

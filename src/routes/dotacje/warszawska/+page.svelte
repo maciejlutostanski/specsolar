@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Cta from '$lib/Cta.svelte';
   import Faq from '$lib/Faq.svelte';
   import type { FaqItemType } from '$lib/models/all';
 
@@ -26,7 +27,7 @@ Dotacja nie może przekroczyć 90% kosztów kwalifikowanych.
       `
     },
     {
-      question: 'Czy "WOJTMAR" może złożyć w moim imieniu wniosek o dotację?',
+      question: 'Czy "SpecSolar" może złożyć w moim imieniu wniosek o dotację?',
       answer:
         'Tak, możemy złożyć wniosek o dotację w imieniu Inwestora, pod warunkiem udzielenia nam odpowiedniego pełnomocnictwa.'
     },
@@ -70,3 +71,5 @@ Poniesione koszty można odliczyć od podstawy podatku pomniejszając ich wysoko
 <div>
   <Faq title="Poznaj szczegóły dotacji" data={faq} />
 </div>
+
+<Cta />

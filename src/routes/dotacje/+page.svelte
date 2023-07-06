@@ -55,6 +55,7 @@
       <OfferCard
         title="Program “Zielona Energia w Gospodarstwie”"
         imageUrl="/images/dotacje/5.png"
+        href="/dotacje/zielona-energia-w-gospodarstwie"
       />
     </div>
   </div>

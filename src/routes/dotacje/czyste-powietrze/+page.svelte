@@ -1,5 +1,7 @@
 <script lang="ts">
+  import Cta from '$lib/Cta.svelte';
   import Faq from '$lib/Faq.svelte';
+  import SubsidyHeader from '$lib/SubsidyHeader.svelte';
   import type { FaqItemType } from '$lib/models/all';
 
   const faq: FaqItemType[] = [
@@ -27,7 +29,7 @@ Dotacja dzieli się na dwa poziomy:
       answer: 'Nabór trwa od 15.05.2020r i prowadzony jest w trybie ciągłym.'
     },
     {
-      question: 'Czy "WOJTMAR" może złożyć w moim imieniu wniosek o dotację?',
+      question: 'Czy "SpecSolar" może złożyć w moim imieniu wniosek o dotację?',
       answer: 'Tak, możemy złożyć wniosek elektroniczny poprzez profil beneficjenta.'
     },
     {
@@ -83,6 +85,10 @@ Natomiast w przypadku, gdy Wnioskodawca otrzyma dofinansowanie z gminy (podpisa�
   <meta name="description" content="Program dofinansowania Czyste Powietrze" />
 </svelte:head>
 
+<SubsidyHeader title="Czyste Powietrze" />
+
 <div>
   <Faq title="Poznaj szczegóły dotacji " data={faq} />
 </div>
+
+<Cta />
