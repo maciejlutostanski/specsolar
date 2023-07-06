@@ -1,5 +1,6 @@
 <script lang="ts">
   import Faq from '$lib/Faq.svelte';
+  import SubsidyHeader from '$lib/SubsidyHeader.svelte';
   import type { FaqItemType } from '$lib/models/all';
 
   const faq: FaqItemType[] = [
@@ -47,12 +48,32 @@ Funkcję rekreacyjną kominek pełni, jeżeli: nie posiada płaszcza wodnego, ni
       `
     }
   ];
+
+  const what = `
+Pompa ciepła powietrze-woda<br>
+Pompa ciepła powietrze-powietrze<br>
+Gruntowa pompa ciepła  
+  `;
+
+  const amount = `
+Pompa ciepła powietrze-woda – do **7000zł**<br>
+Pompa ciepła powietrze-powietrze – do **7000zł**<br>
+Gruntowa pompa ciepła – do **21000zł**
+  `;
 </script>
 
 <svelte:head>
   <title>Moje Ciepło | Specsolar.pl</title>
   <meta name="description" content="Program Moje Ciepło" />
 </svelte:head>
+
+<SubsidyHeader
+  title="Moje Ciepło"
+  subtitle="Wsparcie zakupu i montażu pomp ciepła dla nowych budynków jednorodzinnych przyczyni się do ograniczenia niskiej emisji powstającej w wyniku ogrzewania domów jednorodzinnych nieefektywnymi źródłami ciepła wykorzystującymi paliwa kopalne, a ponadto do wzrostu udziału OZE w finalnym zużyciu energii oraz propagowaniu odnawialnych źródeł energii."
+  forWho="Dla właścicieli lub współwłaścicieli nowego budynku mieszkalnego jednorodzinnego"
+  {what}
+  {amount}
+/>
 
 <div>
   <Faq title="Poznaj szczegóły dotacji" data={faq} />
