@@ -78,6 +78,13 @@ Natomiast w przypadku, gdy Wnioskodawca otrzyma dofinansowanie z gminy (podpisa�
       `
     }
   ];
+
+  const amount = `
+Fotowoltaika – do **15 000 zł**<br>
+Kocioł na pellet – do **20 400 zł**<br>
+Pompa ciepła – do **35 200 zł**<br>
+Rekuperacja – do **16 700 zł**
+  `;
 </script>
 
 <svelte:head>
@@ -85,7 +92,13 @@ Natomiast w przypadku, gdy Wnioskodawca otrzyma dofinansowanie z gminy (podpisa�
   <meta name="description" content="Program dofinansowania Czyste Powietrze" />
 </svelte:head>
 
-<SubsidyHeader title="Czyste Powietrze" />
+<SubsidyHeader
+  title="Czyste Powietrze"
+  subtitle="Program dla właścicieli i współwłaścicieli domów jednorodzinnych, lub wydzielonych w budynkach jednorodzinnych lokali mieszkalnych z wyodrębnioną księgą wieczystą."
+  forWho="Osoby fizyczne wytwarzające energię na własne potrzeby"
+  what="Termomodernizacja budynku"
+  {amount}
+/>
 
 <div>
   <Faq title="Poznaj szczegóły dotacji " data={faq} />
