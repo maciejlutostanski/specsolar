@@ -45,6 +45,7 @@
   },
   "type": "module",
   "dependencies": {
+    "pocketbase": "^0.21.1",
     "svelte-markdown": "^0.2.3"
   }
 }

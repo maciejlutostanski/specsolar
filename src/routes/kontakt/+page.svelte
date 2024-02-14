@@ -1,4 +1,26 @@
-<script lang="ts"></script>
+<script lang="ts">
+  import PocketBase from 'pocketbase';
+
+  const pb = new PocketBase('https://sprzedawca.specsolar.pl/api');
+  const initForm = {
+    name: null,
+    surname: null,
+    email: null,
+    phone: null,
+    message: null
+  };
+  let data = { ...initForm };
+  let messageSent = false;
+
+  const sendMessage = async () => {
+    try {
+      const record = await pb.collection('contact').create(data);
+      messageSent = true;
+    } catch (err) {
+      alert('Coś poszło nie tak, spróbuj ponownie.');
+    }
+  };
+</script>
 
 <svelte:head>
   <title>Kontakt | Specsolar.pl</title>
@@ -83,92 +105,126 @@
         </dl>
       </div>
     </div>
-    <form
-      action="mailto:revan1600@gmail.com"
-      method="POST"
-      enctype="text/plain"
-      class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
-    >
-      <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
-        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-          <div>
-            <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900"
-              >Imię</label
+    <div class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48 relative">
+      {#if messageSent}
+        <div class="h-full flex items-center">
+          <div class="px-12">
+            <div
+              class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100"
             >
-            <div class="mt-2.5">
-              <input
-                type="text"
-                name="first-name"
-                id="first-name"
-                autocomplete="given-name"
-                class="block w-full rounded-sm border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-500 sm:text-sm sm:leading-6"
-              />
+              <svg
+                class="h-6 w-6 text-green-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
             </div>
-          </div>
-          <div>
-            <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900"
-              >Nazwisko</label
-            >
-            <div class="mt-2.5">
-              <input
-                type="text"
-                name="last-name"
-                id="last-name"
-                autocomplete="family-name"
-                class="block w-full rounded-sm border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-500 sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div>
-          <div class="sm:col-span-2">
-            <label for="email" class="block text-sm font-semibold leading-6 text-gray-900"
-              >Email</label
-            >
-            <div class="mt-2.5">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                autocomplete="email"
-                class="block w-full rounded-sm border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-500 sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div>
-          <div class="sm:col-span-2">
-            <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900"
-              >Numer telefonu</label
-            >
-            <div class="mt-2.5">
-              <input
-                type="tel"
-                name="phone-number"
-                id="phone-number"
-                autocomplete="tel"
-                class="block w-full rounded-sm border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-500 sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div>
-          <div class="sm:col-span-2">
-            <label for="message" class="block text-sm font-semibold leading-6 text-gray-900"
-              >Wiadomość</label
-            >
-            <div class="mt-2.5">
-              <textarea
-                name="message"
-                id="message"
-                rows="4"
-                class="block w-full rounded-sm border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-500 sm:text-sm sm:leading-6"
-              />
+            <div class="mt-3 text-center sm:mt-5">
+              <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">
+                Wysłano wiadomość
+              </h3>
+              <div class="mt-2">
+                <p class="text-sm text-gray-500">
+                  Czekaj na wiadomość, niedługo odezwie się do Ciebie nasza obsługa klienta.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="mt-8 flex justify-end">
-          <button
-            type="submit"
-            class="rounded-sm bg-primary-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
-            >Wyślij</button
-          >
-        </div>
-      </div>
-    </form>
+      {:else}
+        <form on:submit={sendMessage}>
+          <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+              <div>
+                <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900"
+                  >Imię</label
+                >
+                <div class="mt-2.5">
+                  <input
+                    type="text"
+                    name="first_name"
+                    id="first-name"
+                    autocomplete="given-name"
+                    bind:value={data.name}
+                    class="block w-full rounded-sm border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-500 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div>
+                <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900"
+                  >Nazwisko</label
+                >
+                <div class="mt-2.5">
+                  <input
+                    type="text"
+                    name="last_name"
+                    id="last-name"
+                    autocomplete="family-name"
+                    bind:value={data.surname}
+                    class="block w-full rounded-sm border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-500 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="email" class="block text-sm font-semibold leading-6 text-gray-900"
+                  >Email</label
+                >
+                <div class="mt-2.5">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    autocomplete="email"
+                    bind:value={data.email}
+                    class="block w-full rounded-sm border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-500 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div class="sm:col-span-2">
+                <label
+                  for="phone-number"
+                  class="block text-sm font-semibold leading-6 text-gray-900">Numer telefonu</label
+                >
+                <div class="mt-2.5">
+                  <input
+                    type="tel"
+                    name="phone_number"
+                    id="phone-number"
+                    autocomplete="tel"
+                    bind:value={data.phone}
+                    class="block w-full rounded-sm border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-500 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="message" class="block text-sm font-semibold leading-6 text-gray-900"
+                  >Wiadomość</label
+                >
+                <div class="mt-2.5">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="4"
+                    bind:value={data.message}
+                    class="block w-full rounded-sm border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-500 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 flex justify-end">
+              <button
+                type="submit"
+                class="rounded-sm bg-primary-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
+                >Wyślij</button
+              >
+            </div>
+          </div>
+        </form>
+      {/if}
+    </div>
   </div>
 </div>

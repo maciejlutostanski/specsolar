@@ -21,7 +21,7 @@ Dotacja dzieli się na dwa poziomy:
   2651 zł netto /os. w gospodarstwie jednoosobowym.<br>
 - Najwyższy- Przeznaczony dla osób, których dochód miesięczny nie przekracza:
   1090 zł netto /os. w gospodarstwie wieloosobowym.<br>
-  1520 zł netto /os. w gospodarstwie jednoosobowym.<br>      
+  1520 zł netto /os. w gospodarstwie jednoosobowym.<br>
       `
     },
     {
